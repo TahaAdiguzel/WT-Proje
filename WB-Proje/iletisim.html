@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
@@ -14,14 +15,14 @@
     <!-- Navbar başlangıcı -->
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Kendim Ve Şehrim |</a>
+            <a class="navbar-brand" href="yalova.html">Kendim Ve Şehrim |</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Yalova</a>
+                        <a class="nav-link active" aria-current="page" href="yalova.html">Yalova</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="mirasimiz.html">Mirasımız</a>
@@ -38,11 +39,35 @@
     </nav>
     <!-- Navbar Bitişi -->
 
-    <section class="p-5">
-        <div class="container">
 
+
+    <section class="p-5 text-center iletisim">
+        <div class="container">
+            <h2 class="mb-5 font-weight-bold">İletişim </h2>
+            <form name="iletisim" action="" class="col-md-10 text-left m-auto" onsubmit="return checkForm()" required>
+                <div class="form-group row p-3">
+                    <label for="" class="col-md-4 align-self-center">Ad:</label>
+                    <input type="text" name="ad" value="" class="forms-control col-md-8 " required/>
+                </div>
+                <div class="form-group row p-3">
+                    <label for="" class="col-md-4 align-self-center">Soyad:</label>
+                    <input type="text" name="soyad" value="" class="forms-control col-md-8 " required/>
+                </div>
+                <div class="form-group row p-3">
+                    <label for="" class="col-md-4 align-self-center">E-Mail:</label>
+                    <input type="email" name="mail" value="" class="forms-control col-md-8 " required/>
+                </div>
+                <div class="form-group row p-3">
+                    <label for="" class="col-md-4 align-self-center">Mesaj:</label>
+                   <textarea name="mesaj" id="" cols="30" rows="10" class="forms-control col-md-8" required></textarea>
+                </div>
+                <div class="form-group row">
+                    <button type="Submit" class="col-md-3 btn btn-primary align-self-center">Gönder</button>
+                </div>
+            </form>
         </div>
     </section>
+
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
